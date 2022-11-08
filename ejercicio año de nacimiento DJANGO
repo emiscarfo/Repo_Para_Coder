@@ -1,0 +1,8 @@
+Enviar por parametro tu edad y calcular el año de nacimiento (más o menos uno, para no entrar con los meses)
+  
+def anio_nacimiento(request, edad):
+    
+    edad = int(edad)
+
+    anio_nac = datetime.now().year - edad
+    return HttpResponse(f"Naciste en {anio_nac}")
