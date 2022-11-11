@@ -23,5 +23,6 @@ urlpatterns = [
     path('saludo/', vista_saludo),
     path('hoy/<nombre>',dia_hoy),
     path('calcular-nacimiento/<edad>/',año_nacimiento),
-    path("inicio/",vista_plantilla),
+    path('inicio/',vista_plantilla),
+    path('alumnos/',vista_listado_alumnos2),
     ]

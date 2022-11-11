@@ -19,5 +19,6 @@ from PRIMER_MVT.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("fecha/", fecha_actual),
-    path("inicio", inicio)
+    path("inicio/", inicio),
+    path("ver-familia",vista_familia)
 ]

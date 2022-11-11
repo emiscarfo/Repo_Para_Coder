@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'appEmi'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'PRIMER_MVT.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r"C:\Users\GAMER DELL\visual estudio EMI\DJANGO\DESAFIO_SCARFO\WEB_FAMILIA\PRIMER_MVT\templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

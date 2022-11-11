@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.template import Template, Context
+from django.template import Template, Context, loader
 from datetime import datetime
 # from appfamiliar.models import *
 
@@ -18,7 +18,15 @@ def inicio(request):
     documento= inicio.render(contexto)
     return HttpResponse(documento)
 
-
-
-
+def vista_familia(request):
     
+    listado_nom_ape=["Susana Perez","Ignacio Scarfo",
+    "Eva Fernandez","Laura Barreiro","Pablo Lopez",
+    "Martin Solanas"]
+    datos= {"Familia de":"Emiliano Scarfó", "listado_familiares":listado_nom_ape}
+       
+    plantilla= loader.get_template("familia.html")
+    documento= plantilla.render(datos)
+    return HttpResponse(documento)
+    
+
