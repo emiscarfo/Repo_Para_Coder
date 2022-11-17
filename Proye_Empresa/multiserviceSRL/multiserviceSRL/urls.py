@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from multiserviceSRL.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('vista-saludos/', vista_saludos),
+    path('fecha/', dia_hoy)
 ]
