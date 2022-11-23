@@ -16,9 +16,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from multiserviceSRL.views import *
+#from appcoder.views import Curso
+from django.http import HttpResponse
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('vista-saludos/', vista_saludos),
-    path('fecha/', dia_hoy)
+    path('fecha/', dia_hoy),
+    path("prueba_template/", probando_template),
+    path("prueba2_de_template_pero_pasando_contexto_variables/", probando_template_metodo2),
+    path("prueba3_de_template_listas_for_datetime/", probando_template_metodo3),
+    path("prueba4_de_template_if_filtro_color_notas/",probando_template_metodo4),
+    path("prueba5_de_template_muestro_lista_enumerada/",probando_template_metodo5),
+    path("prueba6_incorporando_cargador_de_plantillas/",vista_usando_cargador_de_plantillas_loader),
+    #path("curso/",curso)
 ]

@@ -16,9 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from PRIMER_MVT.views import *
+from appEmi.views import listado_familia
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("fecha/", fecha_actual),
     path("inicio/", inicio),
-    path("ver-familia",vista_familia)
+    path("ver-familia/",vista_familia),
+    path("listado-familiares/",listado_familia)
 ]

@@ -23,8 +23,7 @@ def vista_familia(request):
     listado_nom_ape=["Susana Perez","Ignacio Scarfo",
     "Eva Fernandez","Laura Barreiro","Pablo Lopez",
     "Martin Solanas"]
-    datos= {"Familia de":"Emiliano Scarfó", "listado_familiares":listado_nom_ape}
-       
+    datos= {"Familia de":"Emiliano Scarfó", "listado_familiares":listado_nom_ape}   
     plantilla= loader.get_template("familia.html")
     documento= plantilla.render(datos)
     return HttpResponse(documento)

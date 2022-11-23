@@ -2,25 +2,13 @@ from django.db import models
 
 # Create your models here.
 
-class Curso(models.Model):
+class Familiar(models.Model):
     nombre= models.CharField(max_length=50)
-    camada= models.IntegerField()
-
-class Estudiante(models.Model):
-    nombre= models.CharField(max_length=30)
-    apellido= models.CharField(max_length=30)
+    tipo_de_pariente= models.CharField(max_length=25)
+    edad= models.IntegerField()
     email= models.EmailField()
+    fecha_nac= models.DateField()
 
-class Profesor(models.Model):
-    nombre= models.CharField(max_length=30)
-    apellido= models.CharField(max_length=30)
-    email= models.EmailField()
-    profesion= models.CharField(max_length=30)
-
-class Entregable(models.Model):
-    nombre= models.CharField(max_length=30)
-    fecha_de_entrega= models.DateField()
-    entregado= models.BooleanField()
 
 
 

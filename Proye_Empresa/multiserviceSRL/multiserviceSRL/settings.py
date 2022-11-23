@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Appservice',
+    'appcoder',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'multiserviceSRL.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r"C:\Users\GAMER DELL\visual estudio EMI\DJANGO\Proye_Empresa\multiserviceSRL\multiserviceSRL\templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
