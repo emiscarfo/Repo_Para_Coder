@@ -19,7 +19,6 @@ def inicio(request):
     return HttpResponse(documento)
 
 def vista_familia(request):
-    
     listado_nom_ape=["Susana Perez","Ignacio Scarfo",
     "Eva Fernandez","Laura Barreiro","Pablo Lopez",
     "Martin Solanas"]
