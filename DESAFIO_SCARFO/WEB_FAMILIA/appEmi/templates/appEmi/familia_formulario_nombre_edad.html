@@ -1,0 +1,19 @@
+{% extends 'appEmi/base.html' %}
+
+{% block contenido %}
+
+<form action="/Emi/familia/crear/" method="post">
+    {% csrf_token %}
+    <p>
+        nombre <input type="text" name="nombre">
+    </p>
+    <p>  
+        edad <input type="number"name="edad">
+    </p>
+    
+    <input type="submit" value="Crear nuevo familiar">
+</form>
+
+{% endblock %}
+
+

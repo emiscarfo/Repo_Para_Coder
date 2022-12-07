@@ -1,0 +1,15 @@
+{% extends  'appEmi/base.html' %}
+
+
+{% block contenido %}
+
+<ul>
+
+    {% for familiares in familiar %}
+        <li>{{familiares.nombre}} -- {{familiares.edad}}</li>
+    {% endfor %}
+
+
+</ul>
+
+{% endblock %}

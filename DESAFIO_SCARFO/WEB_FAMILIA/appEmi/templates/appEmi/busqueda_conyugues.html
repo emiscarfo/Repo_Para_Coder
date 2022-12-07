@@ -1,0 +1,27 @@
+{% extends 'appEmi/base.html'  %} 
+
+{% block contenido %} 
+
+
+<form method="get">
+
+    <p>
+        Nombre conyugue: <input type="text" name="nombre_conyugue">
+    </p>
+    <input type="submit" value="Buscar">
+    
+
+</form>
+
+{% if listado_conyugues %}
+
+<ul>
+    {% for conyugue in listado_conyugues %}
+    <li> {{conyugue.nombre}} {{conyugue.tipo_de_pariente}} {{conyugue.email}} </li>
+    {% endfor %}
+
+</ul>
+
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends  'appEmi/base.html' %}
+
+
+{% block contenido %}
+
+<form action="{% url 'apli-emi-familiar-buscar-resultados' %}"  method="get">
+
+  <p>
+     Nombre del familiar: <input type="text" name="nombre_familiar">
+    <input type="submit" value="Buscar!"> 
+
+  </p>
+
+
+</form>
+
+{% endblock %}
